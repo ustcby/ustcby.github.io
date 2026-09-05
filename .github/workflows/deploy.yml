@@ -26,19 +26,10 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-      - name: Build with Jekyll (debug)
+      - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --trace 2>&1 | tee build.log || true
-          echo "=== EXIT CODE: $? ==="
-          echo "=== _site exists? ==="
-          ls -la _site/ 2>/dev/null | head -30 || echo "NO _site DIR"
-          echo "=== _site/assets/css ==="
-          ls -la _site/assets/css/ 2>/dev/null || echo "no css dir"
-          echo "=== build.log tail 80 ==="
-          tail -80 build.log
-          echo "=== build.log grep -i error ==="
-          grep -in "error\|exception\|fatal\|failed\|cannot\|undefined" build.log | head -30 || echo "no error matches"
-          exit 1
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
