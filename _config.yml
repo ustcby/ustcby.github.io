@@ -299,7 +299,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["思考", "AI", "读书", "决策", "职业"] # 展示在博客首页的标签
-display_categories: ["每日思考", "读书笔记"] # 展示在博客首页的分类
+display_categories: ["每日思考", "读书笔记", "电子资讯"] # 展示在博客首页的分类
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
