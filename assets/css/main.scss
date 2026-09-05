@@ -3,6 +3,9 @@
 ---
 @charset "utf-8";
 
+// 引入思源宋体 + 思源黑体
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
@@ -23,3 +26,222 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+// ============================================
+// Yanbai 自定义美化
+// ============================================
+
+:root {
+  // 主题色：深墨绿（安静、学术感）
+  --global-theme-color: #1a6b5c;
+  --global-hover-color: #145549;
+  // 正文：深灰（不刺眼）
+  --global-text-color: #2d2d2d;
+  // 次要文字
+  --global-text-color-light: #6b6b6b;
+  // 分割线更柔和
+  --global-divider-color: rgba(0, 0, 0, 0.07);
+  // 代码背景更淡
+  --global-code-bg-color: rgba(26, 107, 92, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #4db6a3;
+  --global-hover-color: #6fcdbd;
+  --global-text-color: #d4d4d4;
+  --global-text-color-light: #888;
+  --global-divider-color: rgba(255, 255, 255, 0.1);
+}
+
+// 全局字体与行距
+body {
+  font-family: "Noto Sans SC", "Source Han Sans SC", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--global-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 标题统一用宋体
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  color: var(--global-text-color);
+}
+
+// 链接：默认无下划线，hover 细线
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+// 页头品牌名
+.navbar-brand {
+  font-family: "Noto Serif SC", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+// 导航链接
+.navbar-nav .nav-link {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+// 首页大标题
+h1.name, .post-title {
+  font-family: "Noto Serif SC", Georgia, serif;
+  font-weight: 700;
+}
+
+// 首页副标题
+.profile .subtitle {
+  font-family: "Noto Serif SC", Georgia, serif;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  font-size: 1.1rem;
+}
+
+// 首页正文区
+.about-text p {
+  margin-bottom: 1.2rem;
+}
+
+// news / latest posts 区域标题
+.news h2, .latest_posts h2 {
+  font-family: "Noto Serif SC", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+// 文章列表卡片
+.post-list .post-card, .post-list-item {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 1.2rem 0;
+}
+.post-list .post-card:last-child {
+  border-bottom: none;
+}
+
+// 文章标题
+.post-list .post-title, .post-card-title {
+  font-family: "Noto Serif SC", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+// 文章摘要
+.post-card-description, .post-list .post-description {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+// 文章元信息（日期、标签）
+.post-meta, .post-card-meta {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+// 标签
+.badge, .tag {
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: rgba(26, 107, 92, 0.08);
+  color: var(--global-theme-color);
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+// 文章正文
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.post-content p {
+  margin-bottom: 1.3rem;
+}
+.post-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.post-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+// 引用块
+blockquote {
+  border-left: 3px solid var(--global-theme-color);
+  background: rgba(26, 107, 92, 0.03);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  color: var(--global-text-color-light);
+  font-style: normal;
+}
+
+// 代码
+code {
+  font-size: 0.9em;
+  background: var(--global-code-bg-color);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+pre {
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+// 页脚
+footer {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+// 回到顶部按钮
+#back-to-top {
+  background: var(--global-theme-color) !important;
+  opacity: 0.7;
+}
+#back-to-top:hover {
+  opacity: 1;
+}
+
+// 搜索框
+.search-input {
+  border-radius: 6px;
+  border: 1px solid var(--global-divider-color);
+}
+
+// 响应式：移动端收紧
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  .post-content h2 { font-size: 1.25rem; }
+}

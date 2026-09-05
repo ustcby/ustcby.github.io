@@ -1,0 +1,4 @@
+cd C:\Users\sjtuby\DoubaoWork\chats\2026-09-04\new-chat\Yanbai-site
+git add .
+git commit -m "写了什么，比如：新文章-决策启发式"
+git push

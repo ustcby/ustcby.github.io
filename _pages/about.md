@@ -22,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 
 这里是我的**每日思考花园**。我每天记录一个观点、一次拆解、或一份资源笔记——关于学习、读书、物理、AI，以及这个世界如何运转。
 
-**这里不是"成果陈列馆"，而是"思考进行时"**。我写我正在想的东西，而不是已经完成的东西——因为思考过程本身，就是最有价值的产品。
+我写我正在想的东西，而不是已经完成的东西——因为思考过程本身，就是最有价值的产品。
 
 ## 你在这里会看到什么
 
@@ -36,6 +36,6 @@ social: true # includes social icons at the bottom of the page
 - 兴趣在**物理 × AI 的交叉**：代理模型、神经算子、仿真优化
 - 相信两件事：**复杂问题可以被讲清楚**；**持续输出是最好的学习方式**
 
-如果你在某个想法上有共鸣，或发现我的错误，欢迎来信：[ustcby@example.com](mailto:ustcby@example.com)。
+如果你在某个想法上有共鸣，或发现我的错误，欢迎来信：[by15051004@sjtu.edu.cn](mailto:ustcby@example.com)。
 
 希望这个花园对你有所帮助。
