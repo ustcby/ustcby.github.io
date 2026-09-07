@@ -1,0 +1,51 @@
+// ============================================
+// 主题 6：赛博科技（Cyber）
+// 风格：深底 + 霓虹青/电光紫，科技感
+// ============================================
+
+:root {
+  --global-theme-color: #00d4aa;
+  --global-hover-color: #00f0c0;
+  --global-text-color: #e0e6ed;
+  --global-text-color-light: #8892a0;
+  --global-divider-color: rgba(0, 212, 170, 0.15);
+  --global-code-bg-color: rgba(0, 212, 170, 0.08);
+  --global-bg-color: #0d1117;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(0, 212, 170, 0.15), rgba(139, 92, 246, 0.08));
+  --yanbai-table-stripe: rgba(0, 212, 170, 0.04);
+  --yanbai-table-hover: rgba(0, 212, 170, 0.1);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(0, 212, 170, 0.06), rgba(139, 92, 246, 0.04));
+  --yanbai-code-color: #00d4aa;
+  --yanbai-code-border: rgba(0, 212, 170, 0.2);
+}
+
+html[data-theme="light"] {
+  --global-theme-color: #0d9488;
+  --global-hover-color: #0f766e;
+  --global-text-color: #1e293b;
+  --global-text-color-light: #64748b;
+  --global-divider-color: rgba(13, 148, 136, 0.1);
+  --global-code-bg-color: rgba(13, 148, 136, 0.05);
+  --global-bg-color: #f0fdfa;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(13, 148, 136, 0.1), rgba(139, 92, 246, 0.05));
+  --yanbai-table-stripe: rgba(13, 148, 136, 0.025);
+  --yanbai-table-hover: rgba(13, 148, 136, 0.06);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(13, 148, 136, 0.04), rgba(139, 92, 246, 0.02));
+  --yanbai-code-color: #0d9488;
+  --yanbai-code-border: rgba(13, 148, 136, 0.1);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #00d4aa;
+  --global-hover-color: #00f0c0;
+  --global-text-color: #e0e6ed;
+  --global-text-color-light: #8892a0;
+  --global-divider-color: rgba(0, 212, 170, 0.15);
+  --global-bg-color: #0d1117;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(0, 212, 170, 0.15), rgba(139, 92, 246, 0.08));
+  --yanbai-table-stripe: rgba(0, 212, 170, 0.04);
+  --yanbai-table-hover: rgba(0, 212, 170, 0.1);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(0, 212, 170, 0.06), rgba(139, 92, 246, 0.04));
+  --yanbai-code-color: #00d4aa;
+  --yanbai-code-border: rgba(0, 212, 170, 0.2);
+}

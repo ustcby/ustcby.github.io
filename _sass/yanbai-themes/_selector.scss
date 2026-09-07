@@ -1,0 +1,25 @@
+// ============================================
+// Yanbai 主题选择器
+// ============================================
+// 使用方法：取消你想要的主题那一行的注释，注释掉其他主题。
+// 每次只保留一个主题处于激活状态。
+// 修改后执行 git add . && git commit && git push 即可生效。
+// ============================================
+
+// 1. 墨绿学术（Ink Green）— 深墨绿 + 米白，安静学术感【当前】
+@import "yanbai-themes/ink-green";
+
+// 2. 暖棕编辑（Editorial）— 米白底 + 焦糖棕，杂志编辑风
+// @import "yanbai-themes/editorial";
+
+// 3. 北欧极简（Nordic）— 冷灰白底 + 雾蓝，Hygge 极简
+// @import "yanbai-themes/nordic";
+
+// 4. 暗夜学术（Dark Academic）— 深棕底 + 古铜金，学院暗夜风
+// @import "yanbai-themes/dark-academic";
+
+// 5. 莫兰迪灰粉（Morandi Rose）— 米白底 + 灰粉/灰绿，低饱和高级感
+// @import "yanbai-themes/morandi-rose";
+
+// 6. 赛博科技（Cyber）— 深底 + 霓虹青/电光紫，科技感
+// @import "yanbai-themes/cyber";

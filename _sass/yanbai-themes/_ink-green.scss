@@ -1,0 +1,35 @@
+// ============================================
+// 主题 1：墨绿学术（Ink Green）— 当前默认
+// 风格：深墨绿 + 米白，安静学术感
+// ============================================
+
+:root {
+  --global-theme-color: #1a6b5c;
+  --global-hover-color: #145549;
+  --global-text-color: #2d2d2d;
+  --global-text-color-light: #6b6b6b;
+  --global-divider-color: rgba(0, 0, 0, 0.07);
+  --global-code-bg-color: rgba(26, 107, 92, 0.05);
+  --global-bg-color: #ffffff;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(26, 107, 92, 0.08), rgba(26, 107, 92, 0.04));
+  --yanbai-table-stripe: rgba(26, 107, 92, 0.025);
+  --yanbai-table-hover: rgba(26, 107, 92, 0.06);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(26, 107, 92, 0.04), rgba(26, 107, 92, 0.01));
+  --yanbai-code-color: #1a6b5c;
+  --yanbai-code-border: rgba(26, 107, 92, 0.1);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #4db6a3;
+  --global-hover-color: #6fcdbd;
+  --global-text-color: #d4d4d4;
+  --global-text-color-light: #888;
+  --global-divider-color: rgba(255, 255, 255, 0.1);
+  --global-bg-color: #1c1c1d;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(77, 182, 163, 0.1), rgba(77, 182, 163, 0.05));
+  --yanbai-table-stripe: rgba(255, 255, 255, 0.03);
+  --yanbai-table-hover: rgba(255, 255, 255, 0.06);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(77, 182, 163, 0.06), rgba(77, 182, 163, 0.02));
+  --yanbai-code-color: #4db6a3;
+  --yanbai-code-border: rgba(77, 182, 163, 0.2);
+}

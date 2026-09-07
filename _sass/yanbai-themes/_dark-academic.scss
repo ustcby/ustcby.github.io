@@ -1,0 +1,52 @@
+// ============================================
+// 主题 4：暗夜学术（Dark Academic）
+// 风格：深棕底 + 古铜金/暗酒红，学院暗夜风
+// ============================================
+
+:root {
+  --global-theme-color: #a67c52;
+  --global-hover-color: #c4956a;
+  --global-text-color: #e8dcc8;
+  --global-text-color-light: #a89880;
+  --global-divider-color: rgba(166, 124, 82, 0.2);
+  --global-code-bg-color: rgba(166, 124, 82, 0.1);
+  --global-bg-color: #1a1612;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(166, 124, 82, 0.15), rgba(166, 124, 82, 0.06));
+  --yanbai-table-stripe: rgba(166, 124, 82, 0.04);
+  --yanbai-table-hover: rgba(166, 124, 82, 0.1);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(166, 124, 82, 0.08), rgba(166, 124, 82, 0.03));
+  --yanbai-code-color: #c4956a;
+  --yanbai-code-border: rgba(166, 124, 82, 0.25);
+}
+
+// 暗夜学术默认就是深色，亮色模式用暖米白
+html[data-theme="light"] {
+  --global-theme-color: #8b6914;
+  --global-hover-color: #6e5210;
+  --global-text-color: #3d3428;
+  --global-text-color-light: #8a7d6b;
+  --global-divider-color: rgba(139, 105, 20, 0.12);
+  --global-code-bg-color: rgba(139, 105, 20, 0.06);
+  --global-bg-color: #f5f0e8;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(139, 105, 20, 0.1), rgba(139, 105, 20, 0.04));
+  --yanbai-table-stripe: rgba(139, 105, 20, 0.03);
+  --yanbai-table-hover: rgba(139, 105, 20, 0.07);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(139, 105, 20, 0.05), rgba(139, 105, 20, 0.015));
+  --yanbai-code-color: #8b6914;
+  --yanbai-code-border: rgba(139, 105, 20, 0.12);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #d4a853;
+  --global-hover-color: #e0bc70;
+  --global-text-color: #e8dcc8;
+  --global-text-color-light: #a89880;
+  --global-divider-color: rgba(212, 168, 83, 0.2);
+  --global-bg-color: #1a1612;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(212, 168, 83, 0.15), rgba(212, 168, 83, 0.06));
+  --yanbai-table-stripe: rgba(212, 168, 83, 0.04);
+  --yanbai-table-hover: rgba(212, 168, 83, 0.1);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(212, 168, 83, 0.08), rgba(212, 168, 83, 0.03));
+  --yanbai-code-color: #d4a853;
+  --yanbai-code-border: rgba(212, 168, 83, 0.25);
+}

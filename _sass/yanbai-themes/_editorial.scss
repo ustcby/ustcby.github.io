@@ -1,0 +1,35 @@
+// ============================================
+// 主题 2：暖棕编辑（Editorial）
+// 风格：米白底 + 焦糖棕，杂志/编辑风，衬线感强
+// ============================================
+
+:root {
+  --global-theme-color: #8b5e3c;
+  --global-hover-color: #6e4a2e;
+  --global-text-color: #3a322b;
+  --global-text-color-light: #8a7e72;
+  --global-divider-color: rgba(139, 94, 60, 0.12);
+  --global-code-bg-color: rgba(139, 94, 60, 0.06);
+  --global-bg-color: #faf8f5;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(139, 94, 60, 0.1), rgba(139, 94, 60, 0.04));
+  --yanbai-table-stripe: rgba(139, 94, 60, 0.03);
+  --yanbai-table-hover: rgba(139, 94, 60, 0.07);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(139, 94, 60, 0.05), rgba(139, 94, 60, 0.015));
+  --yanbai-code-color: #8b5e3c;
+  --yanbai-code-border: rgba(139, 94, 60, 0.12);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #d4a574;
+  --global-hover-color: #e0b88a;
+  --global-text-color: #d4c8bc;
+  --global-text-color-light: #9a8e82;
+  --global-divider-color: rgba(212, 165, 116, 0.15);
+  --global-bg-color: #1f1b17;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.04));
+  --yanbai-table-stripe: rgba(255, 255, 255, 0.025);
+  --yanbai-table-hover: rgba(212, 165, 116, 0.08);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(212, 165, 116, 0.06), rgba(212, 165, 116, 0.02));
+  --yanbai-code-color: #d4a574;
+  --yanbai-code-border: rgba(212, 165, 116, 0.2);
+}

@@ -1,0 +1,35 @@
+// ============================================
+// 主题 5：莫兰迪灰粉（Morandi Rose）
+// 风格：米白底 + 灰粉/灰绿，低饱和高级感
+// ============================================
+
+:root {
+  --global-theme-color: #a67c8a;
+  --global-hover-color: #8a6472;
+  --global-text-color: #4a4044;
+  --global-text-color-light: #9a8e94;
+  --global-divider-color: rgba(166, 124, 138, 0.12);
+  --global-code-bg-color: rgba(166, 124, 138, 0.06);
+  --global-bg-color: #faf7f5;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(166, 124, 138, 0.1), rgba(142, 166, 148, 0.05));
+  --yanbai-table-stripe: rgba(166, 124, 138, 0.03);
+  --yanbai-table-hover: rgba(166, 124, 138, 0.07);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(166, 124, 138, 0.05), rgba(142, 166, 148, 0.03));
+  --yanbai-code-color: #a67c8a;
+  --yanbai-code-border: rgba(166, 124, 138, 0.12);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #c9a0ad;
+  --global-hover-color: #d9b5c0;
+  --global-text-color: #d4c8cc;
+  --global-text-color-light: #9a8e94;
+  --global-divider-color: rgba(201, 160, 173, 0.15);
+  --global-bg-color: #221c1e;
+  --yanbai-table-head-bg: linear-gradient(135deg, rgba(201, 160, 173, 0.12), rgba(160, 185, 168, 0.06));
+  --yanbai-table-stripe: rgba(255, 255, 255, 0.025);
+  --yanbai-table-hover: rgba(201, 160, 173, 0.08);
+  --yanbai-blockquote-bg: linear-gradient(135deg, rgba(201, 160, 173, 0.06), rgba(160, 185, 168, 0.03));
+  --yanbai-code-color: #c9a0ad;
+  --yanbai-code-border: rgba(201, 160, 173, 0.2);
+}

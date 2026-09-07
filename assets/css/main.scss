@@ -31,27 +31,11 @@ $max-content-width: {{ site.max_width }};
 // Yanbai 自定义美化
 // ============================================
 
-:root {
-  // 主题色：深墨绿（安静、学术感）
-  --global-theme-color: #1a6b5c;
-  --global-hover-color: #145549;
-  // 正文：深灰（不刺眼）
-  --global-text-color: #2d2d2d;
-  // 次要文字
-  --global-text-color-light: #6b6b6b;
-  // 分割线更柔和
-  --global-divider-color: rgba(0, 0, 0, 0.07);
-  // 代码背景更淡
-  --global-code-bg-color: rgba(26, 107, 92, 0.05);
-}
-
-html[data-theme="dark"] {
-  --global-theme-color: #4db6a3;
-  --global-hover-color: #6fcdbd;
-  --global-text-color: #d4d4d4;
-  --global-text-color-light: #888;
-  --global-divider-color: rgba(255, 255, 255, 0.1);
-}
+// ============================================
+// Yanbai 主题变量（从主题库选择器引入）
+// 切换主题：编辑 _sass/yanbai-themes/_selector.scss
+// ============================================
+@import "yanbai-themes/selector";
 
 // 全局字体与行距
 body {
@@ -258,7 +242,7 @@ table {
 
 .post-content table thead,
 table thead {
-  background: linear-gradient(135deg, rgba(26, 107, 92, 0.08), rgba(26, 107, 92, 0.04));
+  background: var(--yanbai-table-head-bg);
 }
 
 .post-content table th,
@@ -289,30 +273,19 @@ table tbody tr:last-child td {
 
 .post-content table tbody tr:nth-child(even),
 table tbody tr:nth-child(even) {
-  background: rgba(26, 107, 92, 0.025);
+  background: var(--yanbai-table-stripe);
 }
 
 .post-content table tbody tr:hover,
 table tbody tr:hover {
-  background: rgba(26, 107, 92, 0.06);
+  background: var(--yanbai-table-hover);
   transition: background 0.15s ease;
 }
 
-// 暗色模式表格
+// 暗色模式表格（变量已由主题文件处理，此处仅保留边框微调）
 html[data-theme="dark"] {
   .post-content table, table {
-    border-color: rgba(255,255,255,0.1);
-  }
-  .post-content table th, table th {
-    border-bottom-color: var(--global-theme-color);
-  }
-  .post-content table tbody tr:nth-child(even),
-  table tbody tr:nth-child(even) {
-    background: rgba(255,255,255,0.03);
-  }
-  .post-content table tbody tr:hover,
-  table tbody tr:hover {
-    background: rgba(255,255,255,0.06);
+    border-color: var(--global-divider-color);
   }
 }
 
@@ -320,7 +293,7 @@ html[data-theme="dark"] {
 .post-content blockquote,
 blockquote {
   border-left: 3px solid var(--global-theme-color);
-  background: linear-gradient(135deg, rgba(26, 107, 92, 0.04), rgba(26, 107, 92, 0.01));
+  background: var(--yanbai-blockquote-bg);
   padding: 1rem 1.4rem;
   margin: 1.6rem 0;
   border-radius: 0 8px 8px 0;
@@ -349,7 +322,7 @@ blockquote strong {
   margin: 0.8rem 0;
   padding: 0.6rem 1rem;
   font-size: 0.92rem;
-  background: rgba(26, 107, 92, 0.03);
+  background: var(--yanbai-table-stripe);
 }
 
 // ---------- 代码 ----------
@@ -357,18 +330,18 @@ blockquote strong {
 code {
   font-family: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
   font-size: 0.85em;
-  background: rgba(26, 107, 92, 0.07);
-  color: #1a6b5c;
+  background: var(--global-code-bg-color);
+  color: var(--yanbai-code-color);
   padding: 0.15em 0.45em;
   border-radius: 4px;
-  border: 1px solid rgba(26, 107, 92, 0.1);
+  border: 1px solid var(--yanbai-code-border);
 }
 
 html[data-theme="dark"] {
   .post-content code, code {
-    background: rgba(77, 182, 163, 0.12);
-    color: #4db6a3;
-    border-color: rgba(77, 182, 163, 0.2);
+    background: var(--global-code-bg-color);
+    color: var(--yanbai-code-color);
+    border-color: var(--yanbai-code-border);
   }
 }
 
@@ -527,7 +500,7 @@ pre code {
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 400;
-  background: rgba(26, 107, 92, 0.08);
+  background: var(--global-code-bg-color);
   color: var(--global-theme-color);
   border-radius: 20px;
   padding: 3px 12px;
