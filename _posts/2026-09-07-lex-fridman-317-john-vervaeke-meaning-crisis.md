@@ -2,7 +2,7 @@
 layout: post
 title: "约翰·维尔韦克：意义危机、关联实现与不是宗教的宗教"
 date: 2026-09-07 16:00:00 +0800
-description: Lex Fridman Podcast #317 深度拆解——多伦多大学认知科学家约翰·维尔韦克谈意义危机、关联实现理论、智慧的本质、宗教的认知功能、心流与迷幻剂、非神论立场，以及"不是宗教的宗教"方案。
+description: "Lex Fridman Podcast #317 深度拆解——多伦多大学认知科学家约翰·维尔韦克谈意义危机、关联实现理论、智慧的本质、宗教的认知功能、心流与迷幻剂、非神论立场，以及不是宗教的宗教方案。"
 tags: [Lex Fridman Podcast, 认知科学, 哲学, 意义危机, 约翰·维尔韦克]
 categories: 电子资讯
 related_posts: true
